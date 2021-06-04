@@ -1,0 +1,20 @@
+using System;
+using System.Text;
+
+namespace KnightsOfHonor
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] text = Console.ReadLine()
+                .Split(" ", StringSplitOptions.RemoveEmptyEntries);
+
+            for (int i = 0; i < text.Length; i++)
+            {                             
+                text[i] = $"Sir {text[i]}";
+                Console.WriteLine(text[i]);
+            }
+        }  
+    }
+} 
